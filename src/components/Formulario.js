@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
-const Formulario = ({ titulo }) => {
+const Formulario = ({ titulo, guardarBusquedaLetra }) => {
   const [busqueda, guardarBusqueda] = useState({
     artista: '',
     cancion: '',
@@ -21,6 +21,7 @@ const Formulario = ({ titulo }) => {
       return;
     }
     guardarError(false);
+    guardarBusquedaLetra(busqueda);
   };
 
   return (
