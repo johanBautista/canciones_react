@@ -67,6 +67,13 @@ const Formulario = ({ titulo }) => {
           </button>
         </fieldset>
       </form>
+      <a
+        href="https://lyricsovh.docs.apiary.io/#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>Lyrics.ovh</p>
+      </a>
     </div>
   );
 };
