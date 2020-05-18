@@ -2,11 +2,12 @@ import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import Formulario from './components/Formulario';
 import Letra from './components/Letra';
+import Informacion from './components/Informacion';
 
 function App() {
   const [busquedaletra, guardarBusquedaLetra] = useState({});
   const [letra, guardarLetra] = useState('');
-  const [info, guardarInfo] = useState({});
+  const [informacion, guardarInfo] = useState({});
 
   useEffect(() => {
     if (Object.keys(busquedaletra).length === 0) return;
@@ -38,7 +39,9 @@ function App() {
       </div>
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-6">1</div>
+          <div className="col-md-6">
+            <Informacion informacion={informacion} />
+          </div>
           <div className="col-md-6">
             <Letra letra={letra} />
           </div>
