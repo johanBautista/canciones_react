@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Informacion = ({ informacion }) => {
-  if (Object.keys(informacion).length === 0) return null;
-  const { strArtistThumb, strGenre, strBiographyES } = informacion;
+const Informacion = ({ info }) => {
+  if (Object.keys(info).length === 0) return null;
+
+  const { strArtistThumb, strGenre, strBiographyES } = info;
+
   return (
     <div className="card border-light">
       <div className="card-header bg-primary text-light font-weight-bold">
@@ -15,21 +17,21 @@ const Informacion = ({ informacion }) => {
         <p className="card-text">{strBiographyES}</p>
         <p className="card-text">
           <a
-            href={`https://${informacion.strFacebook}`}
+            href={`https://${info.strFacebook}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook"></i>
           </a>
           <a
-            href={`https://${informacion.strTwitter}`}
+            href={`https://${info.strTwitter}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-twitter"></i>
           </a>
           <a
-            href={`${informacion.strLastFMChart}`}
+            href={`${info.strLastFMChart}`}
             target="_blank"
             rel="noopener noreferrer"
           >
