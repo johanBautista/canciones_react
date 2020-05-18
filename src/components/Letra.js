@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 const Letra = ({ letra }) => {
   if (letra.length === 0) return null;
@@ -8,6 +9,10 @@ const Letra = ({ letra }) => {
       <p className="letra">{letra}</p>
     </Fragment>
   );
+};
+
+Letra.protoTypes = {
+  letra: PropTypes.string.isRequired,
 };
 
 export default Letra;

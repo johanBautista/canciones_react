@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import Error from './Error';
 
 const Formulario = ({ titulo, guardarBusquedaLetra }) => {
@@ -84,6 +86,11 @@ const Formulario = ({ titulo, guardarBusquedaLetra }) => {
       </a>
     </div>
   );
+};
+
+Formulario.protoTypes = {
+  titulo: PropTypes.string.isRequired,
+  guardarBusquedaLetra: PropTypes.func.isRequired,
 };
 
 export default Formulario;
