@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Error from './Error';
 
 const Letra = ({ letra }) => {
   if (letra.length === 0) return null;

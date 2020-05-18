@@ -75,6 +75,13 @@ const Formulario = ({ titulo, guardarBusquedaLetra }) => {
       >
         <p>Lyrics.ovh</p>
       </a>
+      <a
+        href="https://www.theaudiodb.com/api_guide.php"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>Audio DB</p>
+      </a>
     </div>
   );
 };
