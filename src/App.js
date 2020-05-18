@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import Formulario from './components/Formulario';
+import Letra from './components/Letra';
 
 function App() {
   const [busquedaletra, guardarBusquedaLetra] = useState({});
@@ -31,7 +32,9 @@ function App() {
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">1</div>
-          <div className="col-md-6">2</div>
+          <div className="col-md-6">
+            <Letra letra={letra} />
+          </div>
         </div>
       </div>
     </Fragment>
